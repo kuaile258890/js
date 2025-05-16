@@ -77,7 +77,7 @@ var PLANIMATION_MODEL =`
        
         </form>
 
-        <button id="filesChosenButton" class="btn-lg btn-success" type="button" onclick="filesChosen()">Planimate</button>
+        <button id="filesChosenButton" class="btn-lg btn-success" type="button" onclick="filesChosen()">Generate</button>
     
 
 
@@ -88,8 +88,12 @@ var PLANIMATION_MODEL =`
 
         <div id="plannerURLInput" class="input-group">
           <input type="radio" id="urlradio" name="planradio"  onchange="on_change(this)" checked style="display:flex;position:relative;top:-10px;margin-left:15px;margin-right:-10px;">
-          <span class="input-group-addon" id="customPlannerLabel">Custom Planner URL</span>
-          <input id="plannerPlanimationURL" type="text" class="form-control" aria-describedby="customPlannerLabel" placeholder="http://solver.planning.domains/solve">
+          <span class="input-group-addon" id="llmTypeLabel">LLM Type</span>
+          <select class="form-control" id="llmModelSelection" style="width: auto; border-radius: 0;">
+            <option value="gpt4">GPT-4</option>
+            <option value="gpt4o">GPT-4o</option>
+          </select>
+          <input id="plannerPlanimationURL" type="text" class="form-control" aria-describedby="customPlannerLabel" placeholder="Your API Key">
         </div>
 
 <br/>
