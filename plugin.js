@@ -86,13 +86,13 @@ var PLANIMATION_MODEL =`
 
          
 
-        <div id="plannerURLInput" class="input-group" style="display: flex; align-items: center;">
-          <span class="input-group-addon" id="llmTypeLabel" style="border-right: none;">LLM Type</span>
-          <select class="form-control" id="llmModelSelection" style="width: auto; border-radius: 0; border-right: none;">
+        <div id="plannerURLInput" class="input-group">
+          <span class="input-group-addon" id="llmTypeLabel">LLM Type</span>
+          <select class="form-control" id="llmModelSelection" style="width: auto; border-radius: 0;">
             <option value="gpt4">GPT-4</option>
-            <option value="gpt4o">GPT-4.5</option>
+            <option value="gpt4o">GPT-4o</option>
           </select>
-          <input id="plannerPlanimationURL" type="text" class="form-control" style="border-radius: 0;" placeholder="Your API Key">
+          <input id="plannerPlanimationURL" type="text" class="form-control" aria-describedby="customPlannerLabel" placeholder="Your API Key">
         </div>
 
 <br/>
@@ -285,9 +285,9 @@ define(function () {
             snippet += '  ; Objects properties: \n';
             snippet += '  ;     (x) and (y) as integer coordinates or null value; \n';
             snippet += '  ;     (color) as a hexadecimal RGB value pre-specified colour constant or random color; \n';
-            snippet += '  ;     (width) and (height) of the object; (prefabImage) as a base64 string of the object's image\n';
+            snippet += '  ;     (width) and (height) of the object; (prefabImage) as a base64 string of the object’s image\n';
             snippet += '  ;     (depth) of the object in the canvas;\n';
-            snippet += '  ;     a boolean flag (showname) to specify whether to display the object' name; \n';
+            snippet += '  ;     a boolean flag (showname) to specify whether to display the object’ name; \n';
             snippet += '  ;     and an optional label string to substitute the default name of the object in the canvas.\n';
             snippet += '  ;\n';
             snippet += '  ; special visual constraints can be used using (assign ) in the effects section of a predicate\n';
