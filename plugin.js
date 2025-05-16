@@ -91,7 +91,7 @@ var PLANIMATION_MODEL =`
           <span class="input-group-addon" id="llmTypeLabel">LLM Type</span>
           <select class="form-control" id="llmModelSelection" style="width: auto; border-radius: 0;">
             <option value="gpt4">GPT-4</option>
-            <option value="gpt4o">GPT-4o</option>
+            <option value="gpt4o">GPT-4.5</option>
           </select>
           <input id="plannerPlanimationURL" type="text" class="form-control" aria-describedby="customPlannerLabel" placeholder="Your API Key">
         </div>
