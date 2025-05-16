@@ -67,13 +67,6 @@ var PLANIMATION_MODEL =`
               </select>
             </div>
           </div>
-           <div class="form-group">
-            <label for="animateSelection" class="col-sm-4 control-label">Animation</label>
-            <div class="col-sm-8">
-              <select id="animateSelection" class="form-control file-selection">
-              </select>
-            </div>
-          </div>
        
         </form>
 
@@ -96,10 +89,6 @@ var PLANIMATION_MODEL =`
         </div>
 
 <br/>
-            <div class="col-sm-4" style="margin-bottom:5px;">
-            <input type="radio" id="planradio" name="planradio" onchange="on_change(this)" style="margin-right:10px">
-            <label>Upload Plan</label>
-            </div>
 
             <div class="col-sm-4" style="position:relative;top:-5px;left:-6px;">
               <select id="planSelection" style="display:none" class="form-control file-selection">
@@ -252,7 +241,7 @@ function on_change(event){
 define(function () {
 
     // Use this as the default solver url
-    window.planimationURL = "http://solver.planning.domains/solve";
+    window.planimationURL = "Your API Key";
 
       // Use a flag to only insert styles once
     window.planimationSolverStyled = false;
